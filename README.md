@@ -1,16 +1,120 @@
-# React + Vite
+🛍️ Product CRUD Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple Product CRUD (Create, Read, Update, Delete) application built using React and Redux Toolkit.
+The App component serves as the root component and renders the main layout along with the ProductList component.
 
-Currently, two official plugins are available:
+🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Add new products
 
-## React Compiler
+View product list
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Update existing products
 
-## Expanding the ESLint configuration
+Delete products
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Centralized state management with Redux
+
+Clean and minimal UI
+
+🧱 Tech Stack
+
+React
+
+Redux Toolkit
+
+React Redux
+
+CSS
+
+📁 Project Structure
+src/
+├── Components/
+│   └── Product/
+│       ├── ProductForm.jsx
+│       ├── ProductList.jsx
+│       └── ProductCard.jsx
+├── Features/
+│   └── Product/
+│       └── productSlice.js
+├── Store/
+│   └── store.js
+├── App.jsx
+├── App.css
+└── main.jsx
+
+📄 App Component Overview
+
+File: src/App.jsx
+
+import React from "react";
+import "./App.css";
+import ProductList from "./Components/Product/ProductList";
+
+const App = () => {
+  return (
+    <div className="app-container">
+      <h1>Product CRUD</h1>
+      <ProductList />
+    </div>
+  );
+};
+
+export default App;
+
+🧠 What App.jsx Does
+
+Acts as the entry UI component
+
+Displays the application title
+
+Loads the ProductList component
+
+Applies global styles using App.css
+
+🎨 Styling
+
+Global styles are managed in:
+
+src/App.css
+
+
+Example class used:
+
+.app-container – wraps the whole app layout
+
+▶️ How to Run the Project
+
+Install dependencies
+
+npm install
+
+
+Start development server
+
+npm run dev
+
+
+Open in browser
+
+http://localhost:5173
+
+📌 Notes
+
+App.jsx does not manage state directly
+
+All product logic is handled via Redux slices
+
+Components are modular and reusable
+
+🔮 Future Enhancements
+
+Firebase / API integration
+
+Search & filter products
+
+Pagination
+
+Authentication
+
+Responsive design improvements
