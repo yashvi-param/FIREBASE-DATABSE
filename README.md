@@ -1,3 +1,5 @@
+<img width="1906" height="750" alt="Screenshot 2026-02-04 130104" src="https://github.com/user-attachments/assets/416b42ef-75d3-4660-80bb-f1907c616a54" />
+
 🛍️ Product CRUD Application
 
 This is a simple Product CRUD (Create, Read, Update, Delete) application built using React and Redux Toolkit.
